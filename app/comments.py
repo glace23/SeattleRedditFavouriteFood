@@ -15,7 +15,7 @@ print(len(post_comments))
 # creating a dataframe
 comments_df = pd.DataFrame(post_comments, columns=['comment', 'score'])
 
-f = open("comments.csv", "w")
+f = open("../outputs/comments.csv", "w")
 for comment, score in comments_df.values:
     comment_encode = comment.encode("gbk", "ignore")
     comment_decode = comment_encode.decode("gbk")

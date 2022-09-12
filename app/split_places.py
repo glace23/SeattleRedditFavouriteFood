@@ -9,7 +9,7 @@ for i in range(len(upvotes)-1):
     f = open(f"split_places_{min}-{max}.csv", "w")
     f.write(f"WKT, name, description\n")
 
-    with open('places.csv') as csv_file:
+    with open('../outputs/places.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         count = 0
         for row in csv_reader:

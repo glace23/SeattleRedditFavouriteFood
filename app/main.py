@@ -2,10 +2,10 @@ import gmaps_location
 import csv
 
 
-f = open("places.csv", "w")
+f = open("../outputs/places.csv", "w")
 f.write(f"WKT, name, description\n")
 
-with open('comments.csv') as csv_file:
+with open('../outputs/comments.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
 
     for row in csv_reader:
